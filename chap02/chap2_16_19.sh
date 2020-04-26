@@ -16,3 +16,4 @@ echo 18:
 sort -r -k 3 -t $'\t' ../data/popular-names.txt
 
 echo 19:
+cut -f 1 ../data/popular-names.txt | sort | uniq -c | sort -r -k 2 -t ' '
